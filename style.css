@@ -1,9 +1,17 @@
 .header {
-padding: 50px; /* some padding */
+padding: 80px; /* some padding */
 text-align: center; /* center the text */
 background: #1abc9c; /* green background */
 color: white; /* white text color */
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
 }
+.headermiddle {
+    flex-shrink: 3; /* default 1 */
+  }
 
 /* Increase the font size of the <h1> element */
 .header h1 {
@@ -13,7 +21,7 @@ font-size: 40px;
 /* Style the top navigation bar */
 .navbar {
 overflow: hidden; /* Hide overflow */
-background-color: #333; /* Dark background color */
+background-color: #ff1ce5; /* Dark background color */
 }
 
 /* Style the navigation bar links */
@@ -77,3 +85,97 @@ float: none;
 width: 100%;
 }
 }
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+
+  .headerright{
+    max-width: 250px;
+  }
+  .headerleft{
+    max-width: 250px;
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 20px 80px;
+    grid-template-areas:
+    'header header header '
+    'left middle right'
+    'left2 middle2 right2';
+    background-color: #2196F3;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  .item1 {
+    grid-area: header; 
+    color: #333;
+    background-color: #f1f1f1;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .item2 {
+    grid-area: left; 
+    background-color: #f1f1f1;
+    height: 420px;
+    width: 300px;
+    padding: 5px;
+  }
+  .item3 {
+    grid-area: middle; 
+    background-color: #f1f1f1;
+    height: 420px;
+    width: 300px;
+    padding: 5px;
+  }
+  .item4 {
+    grid-area: right; 
+    background-color: #f1f1f1;
+    height: 420px;
+    width: 300px;
+    padding: 5px;
+  }
+  .item5 {
+    grid-area: left2; 
+    background-color: #f1f1f1;
+    height: 420px;
+    width: 300px;
+    padding: 5px;
+  }
+  .item6 {
+    grid-area: middle2; 
+    background-color: #f1f1f1;
+    height: 420px;
+    width: 300px;
+    padding: 5px;
+  }
+
+  .item{
+    max-width:100%;
+    height: auto;
+  }
+
+  .footer{
+    text-align: center; /* center the text */
+    background: #2196F3; /* green background */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .icons{
+      padding-left: 20px;
+      padding-right: 20px;
+  }

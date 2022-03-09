@@ -15,22 +15,98 @@
 <body>
 
 <div class="header">
-    <h1>hi</h1>
+        <div class="headerleft">
+            <h1>My name here</h1>
+        </div>
+        <div class="headermiddle"><img src="man.png" alt="Italian Trulli" width="90%" height="90%"></div>    
+        <div class="headerright">
+            <h1>Learning to develop cool websites</h1>
+        </div>
 </div>
 
-<div class="navbar">
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#" class="right">Link</a>
+<div id="navbar" class="navbar">
+    <a  href="javascript:void(0)">Link</a>
+    <a  href="javascript:void(0)">Link</a>
+    <a  href="javascript:void(0)">Link</a>
+    <a  href="javascript:void(0)" class="right">Link</a>
 </div>
 
-<div class="row">
-    <div class="side">...</div>
-    <div class="main">...</div>
+<div class="grid-container">
+    <div class="item1"><h1>Projects i have done</h1></div>
+    <div class="item2">
+        <img class="item" src="asdccc.jpeg" alt="Italian Trulli">
+        <h2>Project Title</h2>
+        <p>Project Description, i work so hard on this project pls visit or else i feel like i waste my time plese click on the image</p>
+    </div>
+    <div class="item3">
+        <img class="item" src="asdccc.jpeg" alt="Italian Trulli">
+        <h2>Project Title</h2>
+        <p>Project Description, i work so hard on this project pls visit or else i feel like i waste my time plese click on the image</p>
+    </div>
+    <div class="item4">
+        <img class="item" src="asdccc.jpeg" alt="Italian Trulli">
+        <h2>Project Title</h2>
+        <p>Project Description, i work so hard on this project pls visit or else i feel like i waste my time plese click on the image</p>
+    </div>
+    <div class="item5">
+        <img class="item" src="asdccc.jpeg" alt="Italian Trulli">
+        <h2>Project Title</h2>
+        <p>Project Description, i work so hard on this project pls visit or else i feel like i waste my time plese click on the image</p>
+    </div>
+    <div class="item6">
+        <img class="item" src="asdccc.jpeg" alt="Italian Trulli">
+        <h2>Project Title</h2>
+        <p>Project Description, i work so hard on this project pls visit or else i feel like i waste my time plese click on the image</p>
+    </div>
+
+
+    
+
+</div>
+<div class="header">
+    <div class="headerleft">
+        
+    </div>
+    <div class="headermiddle">
+        <h1>Contact me NOW!!</h1>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+          </form> 
+          
+    </div>    
+    <div class="headerright">
+        
+    </div>
+</div>
+
+<div class="footer">
+    <img class="icons" src="facebook.png" height=80px>
+    <img class="icons" src="instagram.png" height=80px>
+    <img class="icons" src="github.png" height=80px>
 </div>
 
 
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
 
 </body>
+
+
+
 </html>
